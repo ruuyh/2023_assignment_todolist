@@ -1,0 +1,117 @@
+@font-face {
+  font-family: '양진체';
+  src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KCC-Ganpan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-size: 900px 1500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 태그에 대한 디자인 */
+h1 {
+  font-family: '양진체';
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* 각각 id에 따른 디자인 */
+#clock {
+  text-align: center;
+  font-size: 4rem;
+  margin: 30px 0;
+  color: white;
+  text-shadow: 0 0 6px black;
+  border: 4px black;
+}
+#greeting, #login-form, #todo-form {
+  text-align: center;
+}
+
+#count {
+  font-family:  'KCC-Ganpan';
+  text-align: center;
+  padding: 10px;
+  margin:10px;
+}
+
+/*todolist 디자인*/
+#todolist {
+  margin: auto; /*중앙정렬*/
+  max-width:400px;
+  margin-top:20px;
+  padding: 0 30px;
+}
+
+#todolist li {
+  font-family:  'KCC-Ganpan';
+  clear:both;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#todolist li input {
+  margin-right: 10px;
+}
+
+#todolist li button {
+  float : right;
+}
+
+#todolist li span {
+  right:  60px;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  color :gray;
+}
+#todolist li button {
+    background-color:rgb(164, 207, 250);
+    border:solid black 2px;
+    cursor:pointer;
+
+}
+
+
+/* input[type="text"], [type="submit"] */
+input[type="text"] {
+  font-family:  'KCC-Ganpan';
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px black solid;
+  color:rgb(56, 56, 138);
+  font-size: 1.5rem;
+  padding: 10px;
+
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="text"]::placeholder {
+  color: white;
+
+}
+
+/* 버튼 디자인 */
+input[type="text"]+input[type="submit"] {
+  background-color:rgb(164, 207, 250);
+  border-radius: 20px;
+  border: none;
+  padding: 5px 7px;
+}
+
+/* 버튼에 마우스를 올렸을때*/
+input[type="text"]+input[type="submit"]:hover {
+  background-color:lightskyblue;
+}
