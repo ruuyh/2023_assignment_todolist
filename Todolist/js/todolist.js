@@ -52,7 +52,7 @@ function todoCheck(e) {
     const button = e.target;
     const li = button.parentNode;
     li.remove();
-    checkToDo();
+    checkToDo();        
 
 }
 
@@ -60,6 +60,6 @@ function checkToDo() {
     const liLength = document.querySelectorAll("li");
     const checked = document.querySelectorAll("li input:checked");
 
-    document.querySelector("#count").innerHTML = `✏️ 전체 할일 : ${liLength.length} / 완료한 할일 : ${checked.length}✔️`;
+    document.querySelector("#count").innerHTML = `✏️ 전체 할일 : ${liLength.length} / 완료한 할일 : ${checked.length} ✔️`;
 }
 
